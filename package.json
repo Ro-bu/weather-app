@@ -1,0 +1,23 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ro-bu/weather-app.git"
+  },
+  "author": "Ro-bu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ro-bu/weather-app/issues"
+  },
+  "homepage": "https://github.com/Ro-bu/weather-app#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
