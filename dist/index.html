@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="main-container">
+        <div class="widget-container">
+            <div class="top-block">
+                <div class="top-left">
+                    <span id="location-name">Helsinki</span>
+                </div>
+                <div class="top-right">
+                    <input type="text" id="location">
+                    <button type="button" id="search-button">SEARCH</button>
+                </div>
+            </div>
+            <div class="bot-block">
+                <div class="bot-left">
+                    <div class="bot-left-top">
+                        <span id="temperature">59</span>
+                    </div>
+                    <div class="bot-left-bot">
+                        <span>FEELS LIKE:</span>
+                        <span id="feels-like">69</span>
+                    </div>
+                </div>
+                <div class="bot-right">
+                    <div class="bot-right-top">
+                        <span id="description">MOSTLY SUNNY</span>
+                    </div>
+                    <div class="bot-right-bot">
+                        <div class="bot-right-bot-top">
+                            <span id="wind">WIND: 10 m/s</span>
+                        </div>
+                        <div class="bot-right-bot-mid">
+                            <span id="pressure">PRESSURE: 1008</span>
+                        </div>
+                        <div class="bot-right-bot-bot">
+                            <span id="humidity">HUMIDITY: 35%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
