@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+
+
+.main-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgb(1,58,99);
+    background: linear-gradient(180deg, rgba(1,58,99,1) 0%, rgba(42,111,151,1) 35%, rgba(42,111,151,1) 65%, rgba(1,58,99,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.widget-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #2d3142;
+    border-radius: 20px;
+    padding: 20px;
+}
+.top-block{
+    display: flex;
+    flex-direction: row;
+}
+.top-left{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding-left: 8px;;
+}
+.top-right{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+.top-right input{
+    background-color: rgb(45,49,66);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0.2rem 0.3rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 800;
+    width: 9rem;
+}
+.top-right button{
+    background-color: rgb(45,49,66);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0.2rem 0.3rem;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+.top-right button:hover{
+    background-color: white;
+    color: rgb(45,49,66);
+}
+.top-right button:active{
+    background-color: rgb(200,200,200);
+    border: 2px solid rgba(200,200,200);
+}
+#temperature{
+    color: white;
+    font-size: 8rem;
+    font-weight: 500;
+    position: relative;
+}
+#temperature::after{
+    content: "\00b0 C";
+    position: absolute;
+    font-size: 2rem;
+    top: 2.2rem;
+}
+.bot-block{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.bot-left{
+
+}
+.bot-left-bot{
+    display:flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 1em;
+}
+.bot-left-bot span:first-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.bot-left-bot span:last-child{
+    margin-top: 5px;
+    font-size: 3rem;
+    font-weight: 600;
+    position:relative;
+}
+.bot-left-bot span:last-child::after{
+    content: "\00b0 C";
+    position: absolute;
+    font-size: 1rem;
+    top: 0.4rem;
+}
+.bot-right{
+    flex-grow: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0.8rem;
+}
+.bot-right-top{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.bot-right-bot-top, .bot-right-bot-mid, .bot-right-bot-bot{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 11px;
+    }
+}
