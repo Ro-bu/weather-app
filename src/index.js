@@ -1,15 +1,17 @@
-// call to 1st api to retrieve lat and long
-// call to onecall api with lat and long from 1st api
+import {populateUi} from "./populateUi.js";
 
-import {fetchWeather} from "./fetchweather.js";
-
-async function pepe (location) {
-    let junn = await fetchWeather(location, "metric");
-    console.log(junn)
-};
-pepe("tallinn");
+populateUi("tallinn");
 
 document.querySelector("#search-button").addEventListener("click", () => {
     let locationName = document.querySelector("#location").value;
-    pepe(locationName);
+    populateUi(locationName);
+    document.querySelector("#location").value = "";
+});
+
+document.querySelector("#location").addEventListener("keyup", (e) => {
+    if(e.key === "Enter") {
+        let locationName = document.querySelector("#location").value;
+        populateUi(locationName);
+        document.querySelector("#location").value = "";
+    };
 });
